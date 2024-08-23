@@ -68,7 +68,9 @@ module.exports = {
     backgroundImage: {
       'minang': "url('/assets/images/rafi.jpeg')",
       'jakarta': "url('/assets/images/gbk.jpg')",
-      'yes': "url('/assets/images/yes.png')"
+      'yes': "url('/assets/images/yes.png')",
+      'ayo2': "url('/assets/images/video/ayo2')",
+      
     }
 },
   },

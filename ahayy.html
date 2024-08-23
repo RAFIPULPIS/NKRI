@@ -6,13 +6,37 @@
   <link href="src/css/output.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="py-9 px-4">
-    <div class="container mx-auto">
-      <div class="flex justify-between">
-        <img src="assets/images/Creative_Amazing_Logo_Design-removebg-preview 1.svg" alt="">
-        <img src="assets/images/Group 1.svg" alt="">
-      </div>
-    </div>
-  </nav>
+  <header id="navbar"
+  class="bg-transparate fixed  transition-colors w-full z-10 p-3 md:flex md:items-center  md:px-10 lg:px-40 xl:px-52">
+  <div class="flex  mx-auto justify-center">
+    <span class="text-2xl text-white font-[poppins] font-semibold cursor-pointer transition-all duration-500 justify-between ">
+      <a href="#home">EXE</a>
+    </span>
+    <span class="text-3xl cursor-pointer mx-2 md:hidden text-white rounded-md flex items-center px-2 py-1">
+      <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+    </span>
+  </div>
+  
+  <ul id="list"
+    class="bg-transparent transition md:flex md:items-center md:justify-center z-[-50] md:static absolute w-full left-0 md:w-auto md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] font-poppins">
+    <a href="#about" class="text-white text-base hover:text-sky-500 transition-all duration-300">
+      <li class="mx-4 my-6 md:my-2 font-semibold">About Robots</li>
+    </a>
+    <a href="#evo" class="text-white text-base hover:text-sky-500 transition-all duration-300">
+      <li class="mx-4 my-6 md:my-2 font-semibold">Evolution</li>
+    </a>
+    <a href="#comp" class="text-white text-base hover:text-sky-500 transition-all duration-300">
+      <li class="mx-4 my-6 md:my-2 font-semibold">Company</li>
+    </a>
+    <a href="#per" class="text-white text-base hover:text-sky-500 transition-all duration-300">
+      <li class="mx-4 my-6 md:my-2 font-semibold">Performance</li>
+    </a>
+  </ul>
+  </header>
+
+
+ 
+ 
 </body>
 </html>
+
