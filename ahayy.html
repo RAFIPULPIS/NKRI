@@ -6,34 +6,103 @@
   <link href="src/css/output.css" rel="stylesheet">
 </head>
 <body>
-  <header id="navbar"
-  class="bg-transparate fixed  transition-colors w-full z-10 p-3 md:flex md:items-center  md:px-10 lg:px-40 xl:px-52">
-  <div class="flex  mx-auto justify-center">
-    <span class="text-2xl text-white font-[poppins] font-semibold cursor-pointer transition-all duration-500 justify-between ">
-      <a href="#home">EXE</a>
-    </span>
-    <span class="text-3xl cursor-pointer mx-2 md:hidden text-white rounded-md flex items-center px-2 py-1">
-      <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-    </span>
-  </div>
-  
-  <ul id="list"
-    class="bg-transparent transition md:flex md:items-center md:justify-center z-[-50] md:static absolute w-full left-0 md:w-auto md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] font-poppins">
-    <a href="#about" class="text-white text-base hover:text-sky-500 transition-all duration-300">
-      <li class="mx-4 my-6 md:my-2 font-semibold">About Robots</li>
-    </a>
-    <a href="#evo" class="text-white text-base hover:text-sky-500 transition-all duration-300">
-      <li class="mx-4 my-6 md:my-2 font-semibold">Evolution</li>
-    </a>
-    <a href="#comp" class="text-white text-base hover:text-sky-500 transition-all duration-300">
-      <li class="mx-4 my-6 md:my-2 font-semibold">Company</li>
-    </a>
-    <a href="#per" class="text-white text-base hover:text-sky-500 transition-all duration-300">
-      <li class="mx-4 my-6 md:my-2 font-semibold">Performance</li>
-    </a>
-  </ul>
-  </header>
+  <header
+      id="navbar"
+      class="bg-black fixed  transition-colors w-full z-10 p-3 md:flex md:items-center md:justify-between md:px-10 lg:px-40 xl:px-52"
+    >
+      <div class="flex justify-between items-center z-50">
+        <span
+          class="text-2xl text-white font-[poppins] font-semibold cursor-pointer transition-all duration-500"
+        >
+          <a href="#home">EXE</a>
+        </span>
+        <span
+          class="text-3xl cursor-pointer mx-2 md:hidden text-white rounded-md flex items-center px-2 py-1"
+        >
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
 
+      <ul
+        id="list"
+        class="bg-black transition md:flex md:items-center z-[-50] md:static absolute w-full left-0 md:w-auto md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] font-poppins"
+      >
+        <a
+          href="#about"
+          class="text-white text-base hover:text-sky-500 transition-all duration-300"
+        >
+          <li class="mx-4 my-6 md:my-2 font-semibold">History</li>
+        </a>
+        <a
+          href="#evo"
+          class="text-white text-base hover:text-sky-500 transition-all duration-300"
+        >
+          <li class="mx-4 my-6 md:my-2 font-semibold">Evolution</li>
+        </a>
+        <a
+          href="#comp"
+          class="text-white text-base hover:text-sky-500 transition-all duration-300"
+        >
+          <li class="mx-4 my-6 md:my-2 font-semibold">Development</li>
+        </a>
+        <a
+          href="#per"
+          class="text-white text-base hover:text-sky-500 transition-all duration-300"
+        >
+          <li class="mx-4 my-6 md:my-2 font-semibold">Education</li>
+        </a>
+      </ul>
+    </header>
+    <!-- End of Nav -->
+
+    <!-- First page -->
+    <section id="home">
+      <div class="relative h-screen w-full overflow-hidden">
+        <video
+          class="absolute top-0 left-0 w-full h-full object-cover brightness-30"
+          autoplay
+          muted
+          loop
+        >
+          <source src="assets/video/y2mate.com - Dirgahayu Republik Indonesia_480p.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute bottom-0 left-0 w-screen h-screen bg-gradient-to-t from-black xl:aspect-auto"
+        ></div>
+        <div
+          class="absolute pl-6 pr-14 top-0 left-0 w-full h-screen flex flex-wrap items-center md:text-center"
+        >
+          <div class="md:flex items-center flex-col space-y-3">
+            <div class="transition-all duration-300 flex">
+              <h1
+                class="text-red-600 text-3xl font-poppins font-semibold md:text-4xl lg:text-4xl"
+              >
+                Nusantara Baru <span class="text-white">Indonesia Maju</span>
+              </h1>
+            </div>
+            <div
+              class="transition-all duration-300 md:px-20 lg:px-48 space-y-5 "
+            >
+              <span
+                class="text-white font-poppins text-base opacity-100 md:text-base lg:text-xl"
+              >
+                Welcome to <br />Nusantara Baru
+                <br /> a digital platform that carries the spirit of unity, culture, and progress of Indonesia. Here, we believe that a bright future begins with an awareness of the richness of the nation's heritage and a spirit of innovation to build a more advanced Indonesia.
+              </span>
+              <div
+                class="flex items-center rounded-md justify-center text-center h-10 w-28 border border-white hover:bg-blue-500 transition-all duration-300 md:h-12 md:w-28 md:mx-auto"
+              >
+                <a href="#about">
+                  <button class="text-white md:text-base lg:text-lg">
+                    Explore
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
  
  
